@@ -1,0 +1,120 @@
+BP - RNA biosynthetic process
+BP - regulation of nucleobase-containing compound metabolic process
+BP - regulation of metabolic process
+BP - regulation of transcription, DNA-dependent
+BP - regulation of cellular biosynthetic process
+BP - nitrogen compound metabolic process
+BP - regulation of macromolecule biosynthetic process
+BP - cellular macromolecule biosynthetic process
+BP - biosynthetic process
+BP - biological regulation
+BP - regulation of primary metabolic process
+BP - regulation of nitrogen compound metabolic process
+BP - immune response-regulating signaling pathway
+BP - activation of immune response
+BP - immune response
+BP - death
+BP - positive regulation of immune system process
+BP - toll-like receptor 3 signaling pathway
+BP - nucleic acid metabolic process
+KEGG - Osteoclast differentiation
+BP - cellular macromolecule metabolic process
+BP - macromolecule biosynthetic process
+BP - cellular nitrogen compound metabolic process
+BP - small molecule metabolic process
+BP - regulation of biosynthetic process
+BP - negative regulation of biological process
+BP - positive regulation of biosynthetic process
+BP - regulation of cellular metabolic process
+BP - positive regulation of nucleobase-containing compound metabolic process
+BP - positive regulation of macromolecule metabolic process
+BP - regulation of biological process
+BP - negative regulation of cellular metabolic process
+BP - positive regulation of transcription from RNA polymerase II promoter
+BP - negative regulation of gene expression
+BP - negative regulation of cellular macromolecule biosynthetic process
+BP - negative regulation of RNA metabolic process
+BP - negative regulation of transcription from RNA polymerase II promoter
+BP - negative regulation of nitrogen compound metabolic process
+BP - negative regulation of biosynthetic process
+BP - negative regulation of cell death
+BP - toll-like receptor 2 signaling pathway
+BP - toll-like receptor 1 signaling pathway
+BP - toll-like receptor 4 signaling pathway
+BP - primary metabolic process
+BP - mitotic cell cycle
+BP - macromolecule modification
+BP - ubiquitin-dependent protein catabolic process
+BP - modification-dependent macromolecule catabolic process
+BP - protein catabolic process
+BP - interphase
+BP - M phase
+BP - mitotic prometaphase
+BP - organelle fission
+BP - gene expression
+BP - cellular component organization at cellular level
+BP - cellular protein metabolic process
+BP - cell division
+BP - cell cycle process
+BP - protein modification by small protein conjugation
+BP - cellular component organization or biogenesis
+BP - positive regulation of cellular process
+KEGG - Cell cycle
+BP - cellular metabolic process
+BP - nucleobase-containing compound metabolic process
+BP - negative regulation of macromolecule biosynthetic process
+BP - negative regulation of cellular biosynthetic process
+BP - negative regulation of nucleobase-containing compound metabolic process
+BP - negative regulation of metabolic process
+BP - negative regulation of cellular process
+BP - negative regulation of transcription, DNA-dependent
+BP - regulation of cellular process
+BP - transcription from RNA polymerase II promoter
+BP - DNA replication
+BP - S phase of mitotic cell cycle
+BP - DNA strand elongation involved in DNA replication
+BP - G1/S transition of mitotic cell cycle
+BP - regulation of cell cycle process
+BP - DNA-dependent DNA replication initiation
+BP - DNA recombination
+BP - cell cycle checkpoint
+BP - cellular response to stress
+BP - telomere maintenance via recombination
+BP - telomere maintenance via semi-conservative replication
+BP - M/G1 transition of mitotic cell cycle
+BP - telomere organization
+BP - DNA repair
+BP - negative regulation of cell cycle
+BP - response to UV
+KEGG - DNA replication
+BP - RNA splicing, via transesterification reactions
+BP - nucleic acid transport
+BP - establishment of RNA localization
+BP - positive regulation of protein ubiquitination
+BP - mitotic cell cycle checkpoint
+BP - positive regulation of ligase activity
+BP - signal transduction by p53 class mediator
+BP - regulation of G1/S transition of mitotic cell cycle
+BP - nuclear export
+BP - positive regulation of ubiquitin-protein ligase activity involved in mitotic cell cycle
+BP - translation
+BP - cellular component organization or biogenesis at cellular level
+BP - DNA damage response, signal transduction by p53 class mediator resulting in cell cycle arrest
+BP - signal transduction involved in DNA damage checkpoint
+BP - signal transduction involved in mitotic cell cycle G1/S checkpoint
+BP - protein folding
+BP - regulation of ubiquitin-protein ligase activity
+BP - signal transduction involved in G1/S transition checkpoint
+BP - cellular component biogenesis
+BP - anaphase-promoting complex-dependent proteasomal ubiquitin-dependent protein catabolic process
+BP - mitotic cell cycle G1/S transition DNA damage checkpoint
+BP - DNA integrity checkpoint
+BP - protein polyubiquitination
+BP - viral reproduction
+BP - mRNA export from nucleus
+BP - negative regulation of protein ubiquitination
+BP - negative regulation of ubiquitin-protein ligase activity involved in mitotic cell cycle
+BP - ribonucleoprotein complex biogenesis
+KEGG - RNA transport
+KEGG - Spliceosome
+KEGG - Ribosome biogenesis in eukaryotes

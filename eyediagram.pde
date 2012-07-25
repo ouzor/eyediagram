@@ -72,10 +72,10 @@ public void setup() {
   font = createFont("Arial", 24); 
   fontBold = createFont("Arial Bold", 24); 
 //  font = createFont("Helvetica", 24); 
-  String[] fontList = PFont.list();
-  println(fontList);
+//  String[] fontList = PFont.list();
+//  println(fontList);
 
-  filepath = "./examples";
+  filepath = "./examples/";
 
   params = readNames(filepath + "input/parameters.txt"); // Read general input information
   outputfile = params[0];

@@ -1,4 +1,4 @@
-# Example code for the eye diagram 
+# Example script for the eye diagram visualization
 # (c) 2011-2012, Juuso Parkkinen (juuso.parkkinen@gmail.com)
 
 # Read eye diagram preprocessing code

@@ -27,7 +27,7 @@ Juuso Parkkinen (juuso.parkkinen@gmail.com), Jose Caldas, Ali Faisal,
 Alvis Brazma and Samuel Kaski. All rights reserved.
 */
 
-
+/* Tested with Processing 1.5.1 on Mac OS X 10.7.4 */
 
 /* INITIALIZATION */
  
@@ -59,8 +59,7 @@ String outputfile;
 int topicCount;
 String[] infoText;
 int highlightedTopic;
-//boolean docColoring;
-//boolean wordColoring;
+
 String[] fontSizes;
 String[] radiusAdjs;
 String[] curveFactors;
@@ -80,10 +79,10 @@ float topicSpreadFactor;
 float docCurveFactor;
 float wordCurveFactor;
 
-int d2tCurveWidthFactor; // = 20; // original: 20?
-int w2tCurveWidthFactor; // = 100; // original: 10, CCA paper: 50
-int d2tCurveAlphaFactor; // = 10; // original: 5, slides: 10
-int w2tCurveAlphaFactor; // = 50; // original: 20, slides: 50
+int d2tCurveWidthFactor;
+int w2tCurveWidthFactor;
+int d2tCurveAlphaFactor;
+int w2tCurveAlphaFactor;
 
 public void setup() { 
   size( screen.width, screen.height, JAVA2D); 
@@ -92,9 +91,6 @@ public void setup() {
 
   font = createFont("Arial", 24); 
   fontBold = createFont("Arial Bold", 24); 
-//  font = createFont("Helvetica", 24); 
-//  String[] fontList = PFont.list();
-//  println(fontList);
 
   filepath = "./example/";
 

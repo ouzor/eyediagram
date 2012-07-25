@@ -71,7 +71,6 @@ public void setup() {
   font = createFont("Arial", 24); 
   fontBold = createFont("Arial Bold", 24); 
 
-
   filepath = "./example/";
 
   params = readNames(filepath + "input/parameters.txt"); // Read general input information

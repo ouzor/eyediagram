@@ -1,0 +1,4 @@
+Example eye diagram
+Left: Documents
+Middle: Topics
+Right: Words

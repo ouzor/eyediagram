@@ -1,3 +1,24 @@
+import processing.core.*; 
+import processing.xml.*; 
+
+import processing.pdf.*; 
+
+import java.applet.*; 
+import java.awt.Dimension; 
+import java.awt.Frame; 
+import java.awt.event.MouseEvent; 
+import java.awt.event.KeyEvent; 
+import java.awt.event.FocusEvent; 
+import java.awt.Image; 
+import java.io.*; 
+import java.net.*; 
+import java.text.*; 
+import java.util.*; 
+import java.util.zip.*; 
+import java.util.regex.*; 
+
+public class eyediagram extends PApplet {
+
 /*  
 Eye diagram visualization code
 LICENCE: FreeBSD License
@@ -9,7 +30,7 @@ Alvis Brazma and Samuel Kaski. All rights reserved.
 
 
 /* INITIALIZATION */
-import processing.pdf.*; 
+ 
  
 PGraphics graphics;
 PFont font;
@@ -142,7 +163,7 @@ public void exportPDF( PGraphics pdf ) {
   
   //PGraphics pdf = createGraphics( 2100, 2950, PDF, "test.pdf" ); 
   pdf.beginDraw(); 
-  pdf.background(#ffffff); 
+  pdf.background(0xffffffff); 
   pdf.fill(0); 
   pdf.scale(1); 
   pdf.strokeCap( SQUARE );
@@ -155,10 +176,10 @@ public void exportPDF( PGraphics pdf ) {
   theta = min_theta;
   
   /* Auxiliary variables */
-  float sum=0.0;
+  float sum=0.0f;
   if (highlightedTopic != -1)
     sum = sum( w2t, highlightedTopic );  
-  float ff = 0.9;
+  float ff = 0.9f;
   float sf;
   float step;
 
@@ -185,11 +206,11 @@ public void exportPDF( PGraphics pdf ) {
     
     pdf.pushMatrix();
     pdf.translate(pdf.width/2-200,pdf.height/2);
-    pdf.rotate( theta + 0.5 * step );
+    pdf.rotate( theta + 0.5f * step );
     pdf.ellipseMode(CENTER);
     pdf.noStroke();
     
-    wordLocations[i] = new Location( r * cos(theta + 0.5*step) - 200, r * sin(theta + 0.5*step));
+    wordLocations[i] = new Location( r * cos(theta + 0.5f*step) - 200, r * sin(theta + 0.5f*step));
                
     pdf.popMatrix();
     pdf.fill(0);
@@ -197,7 +218,7 @@ public void exportPDF( PGraphics pdf ) {
     pdf.pushMatrix();
     
     pdf.translate(pdf.width/2-200,pdf.height/2);
-    pdf.rotate( theta + 0.5*step );
+    pdf.rotate( theta + 0.5f*step );
     pdf.textAlign(LEFT,CENTER);
     // ADD WORD COLOR
 //    if (wordColoring) {
@@ -244,11 +265,11 @@ public void exportPDF( PGraphics pdf ) {
     pdf.pushMatrix();
     
     pdf.translate(pdf.width/2-100,pdf.height/2);
-    pdf.rotate( theta - 0.5 * step );
+    pdf.rotate( theta - 0.5f * step );
     pdf.ellipseMode(CENTER);
     pdf.noStroke();
     
-    documentLocations[i] = new Location( r * cos(theta - 0.5 * step ) -250, r * sin(theta - 0.5 * step ) );
+    documentLocations[i] = new Location( r * cos(theta - 0.5f * step ) -250, r * sin(theta - 0.5f * step ) );
                
     pdf.popMatrix();
     pdf.fill(0);
@@ -256,11 +277,11 @@ public void exportPDF( PGraphics pdf ) {
     pdf.pushMatrix();
     
     float textWidth = pdf.textWidth( document );
-    Location textEnd = new Location( (r+textWidth+4) * cos(theta - 0.5 * step ) -250, (r+textWidth+4) * sin(theta - 0.5 * step ) );
+    Location textEnd = new Location( (r+textWidth+4) * cos(theta - 0.5f * step ) -250, (r+textWidth+4) * sin(theta - 0.5f * step ) );
 
     pdf.translate(pdf.width/2,pdf.height/2);
     pdf.translate( textEnd.x, textEnd.y );
-    pdf.rotate( ( theta - 0.5 * step ) + radians( 180 ) );
+    pdf.rotate( ( theta - 0.5f * step ) + radians( 180 ) );
     pdf.textAlign(LEFT,CENTER);
     // ADD DOC COLOR
 //    if (docColoring) {
@@ -360,7 +381,7 @@ public void exportPDF( PGraphics pdf ) {
 }
 
 
-float maxTextWidth( PGraphics pdf, String[] lines ) {
+public float maxTextWidth( PGraphics pdf, String[] lines ) {
  
   float max = 0;
   for ( int i = 0; i < lines.length; ++i ) {
@@ -371,7 +392,7 @@ float maxTextWidth( PGraphics pdf, String[] lines ) {
   return ( max );
 }
 
-void calculateTopicLocations(int count) {
+public void calculateTopicLocations(int count) {
   
   for ( int i = 0; i < count; ++i ) {
     
@@ -380,7 +401,7 @@ void calculateTopicLocations(int count) {
   }
 }
 
-void drawTopics( PGraphics pdf, int count, float r, String[] labels ) {
+public void drawTopics( PGraphics pdf, int count, float r, String[] labels ) {
   
   pdf.ellipseMode(CENTER);
   pdf.noStroke();
@@ -400,12 +421,12 @@ void drawTopics( PGraphics pdf, int count, float r, String[] labels ) {
     pdf.fill( 0 );
     pdf.textFont( font, topicFontSize);
     pdf.textAlign( CENTER, CENTER );
-    pdf.text( labels[int( topics[i] ) - 1],  topicLocations[i].x, topicLocations[i].y - 2 );
+    pdf.text( labels[PApplet.parseInt( topics[i] ) - 1],  topicLocations[i].x, topicLocations[i].y - 2 );
 //    topicLocations[i] = new Location( -200, yloc );
   }
 }  
 
-float[][] readMatrix( String file, String sep ) {
+public float[][] readMatrix( String file, String sep ) {
   
   String[] strings = loadStrings( file );
   
@@ -426,12 +447,12 @@ float[][] readMatrix( String file, String sep ) {
   return ( matrix );
 }
 
-String[] readNames( String file  ) {
+public String[] readNames( String file  ) {
   String[] strings = loadStrings( file ); 
   return ( strings );
 }
 
-float max( float[][] matrix, int column ) {
+public float max( float[][] matrix, int column ) {
 
   float max = 0;
   for ( int i = 0; i < matrix.length; ++i ) {
@@ -441,11 +462,15 @@ float max( float[][] matrix, int column ) {
   return ( max );
 }
 
-float sum( float[][] matrix, int column ) {
+public float sum( float[][] matrix, int column ) {
  
   float sum = 0;
   for ( int i = 0; i < matrix.length; ++i ) 
     sum += matrix[i][column];
 
   return ( sum );
+}
+  static public void main(String args[]) {
+    PApplet.main(new String[] { "--bgcolor=#FFFFFF", "eyediagram" });
+  }
 }

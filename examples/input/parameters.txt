@@ -1,3 +1,0 @@
-./examples/ExampleEyeDiagram
-7
--1

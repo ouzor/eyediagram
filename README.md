@@ -17,5 +17,4 @@ If you use the code, please cite the following publication:
 
 The eye diagram code is licensed under the [FreeBSD License](https://raw.github.com/ouzor/eyediagram/master/LICENSE)
 
-[![githalytics.com alpha](https://cruel-carlota.pagodabox.com/c29d0ce83b197b24a80045b4f5e0640f "githalytics.com")]
-(http://githalytics.com/ouzor/eyediagram)
+[![githalytics.com alpha](https://cruel-carlota.pagodabox.com/c29d0ce83b197b24a80045b4f5e0640f "githalytics.com")](http://githalytics.com/ouzor/eyediagram)
